@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Clínica Saúde+</title>
+    <!-- Importação do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Container Principal com fundo azul (bg-info) -->
+    <div class="container mt-5 mb-5 p-4 rounded bg-info min-vh-100">
+        
+        <!-- MENU DE NAVEGAÇÃO (NAVBAR) -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded mb-4 p-3">
+            <div class="container-fluid">
+                <!-- Nome da Clínica no Menu -->
+                <a class="navbar-brand fw-bold" href="index.html">🏥 Clínica Saúde+</a>
+                
+                <!-- Botão 'hambúrguer' para celular -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links do Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agendar.html">Exames</a></li> <!-- Link alterado -->
+                        <li class="nav-item"><a class="nav-link" href="consulta.html">Consultas</a></li> <!-- Novo Link -->
+                        <li class="nav-item"><a class="nav-link" href="acompanhamento.html">Meus Exames</a></li>
+                        <li class="nav-item"><a class="nav-link" href="medicos.html">Corpo Clínico</a></li>
+                        <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+                        <!-- Botão Sair -->
+                        <li class="nav-item ms-2"><a class="btn btn-danger btn-sm mt-1" href="login.html">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- CONTEÚDO DE BOAS-VINDAS -->
+        <div class="text-center text-white p-5">
+            <h1 class="display-4 fw-bold">Bem-vindo à Clínica Saúde+</h1>
+            <p class="lead mt-3">Excelência em diagnóstico, tecnologia avançada e cuidado humanizado.</p>
+            
+            <hr class="my-4 text-white"> <!-- Linha divisória -->
+            
+            <p class="mb-5">
+                Utilize nosso sistema online para gerenciar sua saúde com facilidade.<br>
+                Aqui você pode marcar novos procedimentos, verificar resultados e conhecer nossa equipe de especialistas.
+            </p>
+
+            <!-- BOTÕES DE ACESSO RÁPIDO -->
+            <div class="row justify-content-center gap-4">
+                
+                <!-- Botão Agendar Exame -->
+                <div class="col-md-3">
+                    <a href="agendar.html" class="btn btn-light btn-lg w-100 shadow p-4 h-100 d-flex flex-column align-items-center justify-content-center text-decoration-none text-dark">
+                        <h4 class="mb-2">🧪 Agendar Exame</h4>
+                        <small class="text-muted">Laboratoriais e Imagem</small>
+                    </a>
+                </div>
+
+                <!-- Botão Agendar Consulta -->
+                <div class="col-md-3">
+                    <a href="consulta.html" class="btn btn-light btn-lg w-100 shadow p-4 h-100 d-flex flex-column align-items-center justify-content-center text-decoration-none text-dark">
+                        <h4 class="mb-2">🩺 Agendar Consulta</h4>
+                        <small class="text-muted">Com especialista</small>
+                    </a>
+                </div>
+
+                <!-- Botão Acompanhar (Mantenho o original para simplificar, mas idealmente seria um link para perfil ou acompanhamento) -->
+                <div class="col-md-3">
+                    <a href="acompanhamento.html" class="btn btn-light btn-lg w-100 shadow p-4 h-100 d-flex flex-column align-items-center justify-content-center text-decoration-none text-dark">
+                        <h4 class="mb-2">📋 Meus Exames</h4>
+                        <small class="text-muted">Ver status e histórico</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
